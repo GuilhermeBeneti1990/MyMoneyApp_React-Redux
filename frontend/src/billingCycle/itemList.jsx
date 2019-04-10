@@ -23,7 +23,7 @@ class ItemList extends Component {
 
     renderRows() {
         const list = this.props.list || []
-        return list.map((item, index) => {
+        return list.map((item, index) => (
             <tr key={index}>
                 <td><Field name={`${this.props.field}[${index}].name`} component={Input} placeholder='Name...' readOnly={this.props.readOnly}/></td>
                 <td><Field name={`${this.props.field}[${index}].value`} component={Input} placeholder='Value...' readOnly={this.props.readOnly}/></td>
@@ -42,7 +42,7 @@ class ItemList extends Component {
                     </button>
                 </td>
             </tr>
-        })
+        ))
     }
 
     render() {

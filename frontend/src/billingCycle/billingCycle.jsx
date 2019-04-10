@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { bindActionCreator, bindActionCreators } from 'redux'
+import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
 import ContentHeader from '../common/template/contentHeader'

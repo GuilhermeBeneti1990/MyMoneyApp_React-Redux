@@ -1,4 +1,4 @@
-import '../common/template/dependencies'
+import '../common/template/dependecies'
 import React, { Component } from 'react'
 import axios from 'axios'
 import { connect } from 'react-redux'
