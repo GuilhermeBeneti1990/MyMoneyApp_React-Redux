@@ -1,15 +1,15 @@
 import React from 'react'
 import { Router, Route, IndexRoute, Redirect, hasHistory } from 'react-router'
 
-import App from './app'
+import AuthOrApp from './authOrApp'
 import Dashboard from '../dashboard/dashboard'
 import BillingCycle from '../billingCycle/billingCycle'
 
 export default props=> (
     <Router history={hasHistory}>
-        <Route path='/' component={App}>
+        <Route path='/' component={AuthOrApp}>
             <IndexRoute component={Dashboard} />
-            <Route path='billingCycle' component={Dashboard} />
+            <Route path='billingCycle' component={BillingCycle} />
         </Route>
         <Redirect from='*' to='/' />   
     </Router>
