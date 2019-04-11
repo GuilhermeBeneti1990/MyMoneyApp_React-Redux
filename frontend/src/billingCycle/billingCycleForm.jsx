@@ -21,7 +21,7 @@ class BillingCycleForm extends Component {
         const { handleSubmit, readOnly, credits, debits } = this.props
         const { sumOfCredits, sumOfDebits } = this.calculateSummary()
         return (
-            <form role='form' onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <div className="box-body">
                     <Field name='name' component={labelAndInput} label='Name' cols='12 4'  placeholder='Name...' readOnly={readOnly}/>
                     <Field name='month' component={labelAndInput} type='number' label='Month' cols='12 4' placeholder='Month...' readOnly={readOnly}/>
