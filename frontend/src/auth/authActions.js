@@ -19,7 +19,7 @@ function submit(values, url) {
                 ])
             })
             .catch(e => {
-                e.response.data.errors.forEach(error => toastr.error('Erro', error))
+                e.response.data.errors.forEach(error => toastr.error('Error', error))
             })
     }
 }

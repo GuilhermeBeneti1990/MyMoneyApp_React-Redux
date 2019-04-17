@@ -16,13 +16,16 @@ class Auth extends Component {
         super(props)
         this.state = { loginMode: true }
     }
+
     changeMode() {
         this.setState({ loginMode: !this.state.loginMode })
     }
+
     onSubmit(values) {
         const { login, signup } = this.props
         this.state.loginMode ? login(values) : signup(values)
     }
+
     render() {
         const { loginMode } = this.state
         const { handleSubmit } = this.props
@@ -49,7 +52,7 @@ class Auth extends Component {
                         </Row> */}
                     </form>
                     <br />
-                    <a href='/#/' onClick={() => this.changeMode()}>
+                    <a onClick={() => this.changeMode()}>
                         {loginMode ? 'New here? SignUp now!' : 'Already registered? Login here!'}
                     </a>
                 </div>

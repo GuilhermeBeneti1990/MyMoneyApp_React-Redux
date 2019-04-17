@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 
 import { applyMiddleware, createStore } from 'redux'
 import { Provider } from 'react-redux'
-import * as serviceWorker from './serviceWorker';
+import registerServiceWorker from './registerServiceWorker'
 
 import promise from 'redux-promise'
 import multi from 'redux-multi'
@@ -21,4 +21,4 @@ ReactDOM.render(
     ,document.getElementById('app')
 )
 
-serviceWorker.unregister();
+registerServiceWorker()
