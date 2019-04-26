@@ -5,8 +5,8 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
 import { login, signup } from './authActions'
-// import Row from '../common/layout/row'
-// import Grid from '../common/layout/grid'
+import Row from '../common/layout/row'
+import Grid from '../common/layout/grid'
 // import If from '../common/operator/if'
 import Messages from '../common/msg/messages'
 import Input from '../common/form/inputAuth'
@@ -42,14 +42,14 @@ class Auth extends Component {
                             placeholder="Password" icon='lock' />
                         <Field component={Input} type="password" name="confirm_password"
                             placeholder="Confirm your password" icon='lock' hide={loginMode} />
-                        {/* <Row>
-                            <Grid cols="4"> */}
+                        <Row>
+                            <Grid cols="4">
                                 <button type="submit"
                                     className="btn btn-primary btn-block btn-flat">
                                     {loginMode ? 'Login' : 'SignUp'}
                                 </button>
-                            {/* </Grid>
-                        </Row> */}
+                            </Grid>
+                        </Row>
                     </form>
                     <br />
                     <a onClick={() => this.changeMode()}>

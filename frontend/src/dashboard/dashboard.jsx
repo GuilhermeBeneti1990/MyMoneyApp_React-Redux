@@ -7,6 +7,7 @@ import ContentHeader from '../common/template/contentHeader'
 import Content from '../common/template/content'
 import ValueBox from '../common/widget/valueBox'
 import Row from '../common/layout/row'
+import Grid from '../common/layout/grid'
 
 class Dashboard extends Component {
 
@@ -14,7 +15,7 @@ class Dashboard extends Component {
         this.props.getSummary()
     }
 
-    render () {
+    render() {
         const { credit, debit } = this.props.summary
         return (
             <div>

@@ -9,9 +9,10 @@ import TabsHeader from '../common/tab/tabsHeader'
 import TabsContent from '../common/tab/tabsContent'
 import TabHeader from '../common/tab/tabHeader'
 import TabContent from '../common/tab/tabContent'
+import { init, create, update, remove } from './billingCycleActions'
+
 import List from './billingCycleList'
 import Form from './billingCycleForm'
-import { init, create, update, remove } from './billingCycleActions'
 
 class BillingCycle extends Component {
 
@@ -22,7 +23,7 @@ class BillingCycle extends Component {
     render() {
         return (
             <div>
-                <ContentHeader title='Billing Cycles' small='Register'></ContentHeader>
+                <ContentHeader title='Billing Cycles' small='Register' />
                 <Content>
                    <Tabs>
                        <TabsHeader>
