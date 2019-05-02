@@ -33,13 +33,13 @@ function submit(values, method) {
     return dispatch => {
         const id = values._id ? values._id : ''
         axios[method](`${BASE_URL}/billingCycles/${id}`, values)
-        .then(resp => {
-            toastr.success('Success', 'Successful Operation.')
-            dispatch(init())
-        })
-        .catch(e => {
-            e.response.data.errors.forEach(error => toastr.error('Error', error))
-        })
+            .then(resp => {
+                toastr.success('Success', 'Successful Operation.')
+                dispatch(init())
+            })
+            .catch(e => {
+                e.response.data.errors.forEach(error => toastr.error('Error', error))
+            })
     }
 }
 

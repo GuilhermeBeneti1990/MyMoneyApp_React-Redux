@@ -9,9 +9,9 @@ export default ({credit, debit}) => (
         <fieldset>
             <legend>Resume</legend>
             <Row>
-                <ValueBox cols='12 4' color='grenn' icon='bank' value={`$ ${credit}`} />
-                <ValueBox cols='12 4' color='red' icon='credit-card' value={`$ ${debit}`} />
-                <ValueBox cols='12 4' color='blue' icon='money' value={`$ ${credit - debit}`} text='Total' />
+                <ValueBox cols='12 4' color='green' icon='bank' value={`$ ${credit}`} text='Credits Total' />
+                <ValueBox cols='12 4' color='red' icon='credit-card' value={`$ ${debit}`} text='Debits Total' />
+                <ValueBox cols='12 4' color='blue' icon='money' value={`$ ${credit - debit}`} text='Amount Total' />
             </Row>
         </fieldset>
     </Grid>

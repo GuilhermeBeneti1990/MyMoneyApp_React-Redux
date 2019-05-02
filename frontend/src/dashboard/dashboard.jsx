@@ -19,7 +19,7 @@ class Dashboard extends Component {
         const { credit, debit } = this.props.summary
         return (
             <div>
-                <ContentHeader title='Dashboard' smal='1.0 Version' />
+                <ContentHeader title='Dashboard' small='1.0 Version' />
                 <Content>
                     <Row>
                         <ValueBox cols='12 4' color='green' icon='bank' value={`USD ${credit}`} text='Credit Total' />
