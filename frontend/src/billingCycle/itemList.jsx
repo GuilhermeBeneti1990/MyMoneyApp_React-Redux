@@ -52,12 +52,14 @@ class ItemList extends Component {
                     <legend>{this.props.legend}</legend>
                     <table className="table">
                         <thead>
-                            <th>Name</th>
-                            <th>Value</th>
-                            <If test={this.props.showStatus}>
-                                <th>Status</th>
-                            </If>
-                            <th className='table-actions'>Actions</th>
+                            <tr>
+                                <th>Name</th>
+                                <th>Value</th>
+                                <If test={this.props.showStatus}>
+                                    <th>Status</th>
+                                </If>
+                                <th className='table-actions'>Actions</th>
+                            </tr>
                         </thead>
                         <tbody>
                             {this.renderRows()}
