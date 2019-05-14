@@ -22,9 +22,9 @@ class Dashboard extends Component {
                 <ContentHeader title='Dashboard' small='1.0 Version' />
                 <Content>
                     <Row>
-                        <ValueBox cols='12 4' color='green' icon='bank' value={`USD ${credit}`} text='Credit Total' />
-                        <ValueBox cols='12 4' color='red' icon='credit-card' value={`USD ${debit}`} text='Debits Total' />
-                        <ValueBox cols='12 4' color='blue' icon='money' value={`USD ${credit - debit}`} text='Value' />
+                        <ValueBox cols='12 4' color='green' icon='bank' value={`$ ${credit}`} text='Credit Total' />
+                        <ValueBox cols='12 4' color='red' icon='credit-card' value={`$ ${debit}`} text='Debits Total' />
+                        <ValueBox cols='12 4' color='blue' icon='money' value={`$ ${credit - debit}`} text='Amount Total' />
                     </Row>
                 </Content>
             </div>
